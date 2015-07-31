@@ -78,7 +78,7 @@ final class PhabricatorAuthSession extends PhabricatorAuthDAO
         if ($is_partial) {
           return phutil_units('30 minutes in seconds');
         } else {
-          return phutil_units('30 days in seconds');
+          return phutil_units('8 hours in seconds');
         }
       case self::TYPE_CONDUIT:
         return phutil_units('24 hours in seconds');
