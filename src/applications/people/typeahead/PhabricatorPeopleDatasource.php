@@ -34,6 +34,32 @@ final class PhabricatorPeopleDatasource
 
     $users = $this->executeQuery($query);
 
+    $filtered_users = array();
+    foreach ($users as $user) {
+      $spaces = PhabricatorSpacesNamespaceQuery::getViewerActiveSpaces($user);
+
+      if (empty($spaces)) {
+        $filtered_users[] = $user;
+        continue;
+      }
+
+      foreach ($spaces as $space) {
+        $policy = $space->getPolicy(PhabricatorPolicyCapability::CAN_VIEW);
+
+        try {
+          PhabricatorPolicyFilter::requireCapabilityWithForcedPolicy($viewer, $user, PhabricatorPolicyCapability::CAN_VIEW, $policy);
+        }
+        catch (PhabricatorPolicyException $ex) {
+          continue;
+        }
+
+        $filtered_users[] = $user;
+        break;
+      }
+    }
+
+    $users = $filtered_users;
+
     $is_browse = $this->getIsBrowse();
 
     if ($is_browse && $users) {
