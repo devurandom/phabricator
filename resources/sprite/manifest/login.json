@@ -96,6 +96,11 @@
       "rule": ".login-Twitter",
       "hash": "5a60e22662a2f5c5c1bc036153f64a18"
     },
+    "login-UHD": {
+      "name": "login-UHD",
+      "rule": ".login-UHD",
+      "hash": "2bea3315291f8487878aca7499623aac"
+    },
     "login-WePay": {
       "name": "login-WePay",
       "rule": ".login-WePay",

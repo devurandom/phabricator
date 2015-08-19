@@ -56,42 +56,46 @@ only screen and (min-resolution: 1.5dppx) {
 }
 
 .login-Jira {
-  background-position: 0px -58px;
+  background-position: -116px -29px;
 }
 
 .login-LDAP {
-  background-position: -29px -58px;
+  background-position: 0px -58px;
 }
 
 .login-MediaWiki {
-  background-position: -58px -58px;
+  background-position: -29px -58px;
 }
 
 .login-PayPal {
-  background-position: -87px -58px;
+  background-position: -58px -58px;
 }
 
 .login-Phabricator {
-  background-position: 0px -87px;
+  background-position: -87px -58px;
 }
 
 .login-Slack {
-  background-position: -29px -87px;
+  background-position: 0px -87px;
 }
 
 .login-Stripe {
-  background-position: -58px -87px;
+  background-position: -29px -87px;
 }
 
 .login-TestPayment {
-  background-position: -87px -87px;
+  background-position: -58px -87px;
 }
 
 .login-TwitchTV {
-  background-position: 0px -116px;
+  background-position: -87px -87px;
 }
 
 .login-Twitter {
+  background-position: 0px -116px;
+}
+
+.login-UHD {
   background-position: -29px -116px;
 }
 
