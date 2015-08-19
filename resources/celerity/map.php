@@ -524,6 +524,7 @@ return array(
     'rsrc/js/phuix/PHUIXExample.js' => 'c2c500a7',
     'rsrc/js/phuix/PHUIXFormControl.js' => '38c1f3fb',
     'rsrc/js/phuix/PHUIXIconView.js' => 'a5257c4e',
+    'rsrc/uhd/logo.png' => '0a69921d',
   ),
   'symbols' => array(
     'almanac-css' => '2e050f4f',
