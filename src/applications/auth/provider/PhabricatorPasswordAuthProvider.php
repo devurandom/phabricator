@@ -173,7 +173,7 @@ final class PhabricatorPasswordAuthProvider extends PhabricatorAuthProvider {
     $dialog = id(new AphrontDialogView())
       ->setSubmitURI($this->getLoginURI())
       ->setUser($viewer)
-      ->setTitle(pht('Log In'))
+      ->setTitle(pht('External User'))
       ->addSubmitButton(pht('Log In'));
 
     if ($this->shouldAllowRegistration()) {
